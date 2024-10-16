@@ -851,13 +851,19 @@ opcoes p {
 
     .card-detalhes p {
         margin-bottom: 0px;
-        margin-top: 0.3rem;
         font-size: 0.5rem;
+        line-height: 1;
     }
 
     .opcoes {
         margin-bottom: 0rem;
         line-height: 0.5;
+    }
+
+    .circulo {
+        width: 5px;
+        height: 5px;
+        margin-right: 0.2rem;
     }
 
     .opcoes p {
