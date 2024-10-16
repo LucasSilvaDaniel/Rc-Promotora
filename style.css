@@ -819,14 +819,14 @@ opcoes p {
 
     .card {
         width: 15vh;
-        height: 6rem;
+        height: 6.3rem;
         padding: 0.8rem 0px 1.5rem 0.7rem;
         margin-top: 0.7rem;
     }
 
     .card2 {
         width: 15vh;
-        height: 6.6rem;
+        height: 7rem;
         padding: 0.7rem 0px 0.9rem 0.7rem;
         margin-top: 0.7rem;
     }
@@ -839,9 +839,10 @@ opcoes p {
     }
 
     .card-cabeca h1 {
-        font-size: 0.6rem;
+        font-size: 0.8rem;
         line-height: 1;
         margin: 0;
+        padding: 0;
     }
 
     .borda-icone,
@@ -851,13 +852,14 @@ opcoes p {
 
     .card-detalhes p {
         margin-bottom: 0px;
-        font-size: 0.5rem;
+        font-size: 0.6rem;
         line-height: 1;
     }
 
     .opcoes {
-        margin-bottom: 0rem;
         line-height: 0.5;
+        margin: 0;
+        padding: 0;
     }
 
     .circulo {
@@ -868,6 +870,8 @@ opcoes p {
 
     .opcoes p {
         font-size: 0.5rem;
+        margin: 0.3rem;
+        
     }
 
     .setaPreta {
