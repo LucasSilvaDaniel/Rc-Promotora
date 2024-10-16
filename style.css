@@ -1,0 +1,816 @@
+body {
+    margin: 0;
+    min-width: 280px;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.logoPromotora {
+    width: 20%;
+    height: auto;
+    margin: 2%;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #332C89;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.home {
+    padding: 10px;
+    font-weight: 700;
+    color: white;
+    font-size: 27px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.servicos {
+    padding: 10px;
+    font-weight: 700;
+    color: white;
+    font-size: 27px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.quemSomos {
+    padding: 10px;
+    font-weight: 700;
+    color: white;
+    font-size: 27px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.duvidas {
+    padding: 10px;
+    font-weight: 700;
+    color: white;
+    font-size: 27px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.faleConosco {
+    background-color: #FFA500;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: black;
+    border-radius: 14px;
+    padding: 14px;
+    text-decoration: none;
+}
+
+.container-slide {
+    position: relative;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.paginas-slide {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    animation: anima 30s linear infinite;
+}
+
+@keyframes anima {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.paginas-slide img {
+    margin: 20px;
+}
+
+.imgBradesco,
+.imgSantander {
+    width: 230px;
+    padding-left: 5px;
+}
+
+.imgDaycoval {
+    width: 220px;
+}
+
+.imgBMG {
+    width: 160px;
+}
+
+.imgBrasil,
+.imgMaster {
+    width: 150px;
+}
+
+.imgSafra {
+    width: 140px;
+}
+
+.imgCaixa,
+.imgCapitalConsig,
+.imgNeoCredito,
+.imgSaninvest {
+    width: 130px;
+}
+
+.imgFacta {
+    width: 120px;
+}
+
+.imgPan,
+.imgBRG,
+.imgBanrisul,
+.imgDigio,
+.imgInsurba {
+    width: 100px;
+}
+
+.imgItau {
+    width: 90px;
+}
+
+.atendimento {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.aBaixo {
+    margin-left: 6%;
+    margin-right: 6%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.escritaAtendimento {
+    color: black;
+    font-weight: 900;
+    font-size: 2.5rem;
+}
+
+.descricaoAtendimento {
+    color: black;
+    font-weight: 800;
+    font-size: 1.5rem;
+    white-space: normal;
+    word-wrap: break-word;
+    line-height: 1.5;
+}
+
+.faleConoscoAtendimento {
+    background-color: #FFA500;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: black;
+    border-radius: 14px;
+    padding: 20px 14px;
+    width: 40%;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+}
+
+.imgAtendimento {
+    border-radius: 50px;
+    width: 42%;
+    height: 500px;
+    object-fit: cover;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/*Daqui pra baixo mudar o tamanho para as outras telas menores*/
+
+.container-servicos {
+    width: 100%;
+    height: auto;
+    background-image: url('Imagens/FundosDeTela/ImgNossosServicos.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 82px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.borda-icone img {
+    width: 60px;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: end;
+}
+
+/* Animação de hover nos cards */
+.card,
+.card2,
+.cardSozinho {
+    transition: transform 0.3s ease;
+}
+
+.card:hover,
+.card2:hover,
+.cardSozinho:hover {
+    transform: scale(1.05);
+}
+
+.card {
+    width: 240px;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px 0px 20px 10px;
+    text-align: left;
+    position: relative;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    margin: 0.6rem 0.6rem 0rem 0rem;
+}
+
+.card2 {
+    width: 240px;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px 0px 20px 10px;
+    text-align: left;
+    position: relative;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    margin: 0.6rem 0.6rem 0rem 0rem;
+}
+
+.card-container-sozinho {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cardSozinho {
+    width: 350px;
+    height: 150px;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px 0px 20px 10px;
+    text-align: left;
+    position: relative;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    margin: 0.7rem 5rem 0.7rem 0rem;
+}
+
+.ladoALadoOpcaoCard {
+    display: flex;
+    flex-direction: row;
+}
+
+.card-cabeca h1 {
+    font-size: 20px;
+    color: #1e1e1e;
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.borda-icone {
+    width: 55px;
+    height: 55px;
+    border: 4px solid #000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.borda-icone img {
+    width: 60px;
+}
+
+.card-cabeca {
+    position: relative;
+}
+
+.icon-container {
+    position: absolute;
+    top: -10px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-detalhes {
+    margin-top: 17px;
+    text-align: left;
+}
+
+.card-detalhes p {
+    color: #3e4095;
+    margin-bottom: 0px;
+    margin-top: 2px;
+}
+
+.card-opcoes {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.opcoes {
+    display: flex;
+    align-items: center;
+    margin-bottom: -15px;
+}
+
+.circulo {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: #3e4095;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+opcoes p {
+    font-size: 14px;
+    color: #333;
+}
+
+.setaPreta {
+    width: 20px;
+    height: auto;
+}
+
+.setaBranca {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 22px;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.setaBranca:hover {
+    content: url('Imagens/Cards/setaPreta.svg');
+    transform: scale(1.1);
+}
+
+.faleConoscoCard {
+    background-color: #FFA500;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: black;
+    border-radius: 14px;
+    padding: 20px 14px;
+    width: 12rem;
+    text-align: center;
+    text-decoration: none;
+    position: absolute;
+    top: 7rem;
+    left: 3rem;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------*/
+
+@media (max-width: 923px) {
+
+    .logoPromotora {
+        width: 30%;
+    }
+
+    .home,
+    .servicos,
+    .quemSomos,
+    .duvidas,
+    .faleConosco {
+        font-size: 0.7rem;
+        padding: 2px;
+    }
+
+    .imgBradesco,
+    .imgSantander {
+        width: 10rem;
+    }
+
+    .imgDaycoval,
+    .imgMaster,
+    .imgSafra {
+        width: 7rem;
+    }
+
+    .imgCaixa,
+    .imgCapitalConsig,
+    .imgNeoCredito,
+    .imgSaninvest,
+    .imgBMG,
+    .imgBrasil,
+    .imgFacta,
+    .imgPan,
+    .imgBRG,
+    .imgDigio,
+    .imgInsurba {
+        width: 6rem;
+    }
+
+    .imgBanrisul {
+        width: 5rem;
+    }
+
+    .imgItau {
+        width: 4.5rem;
+    }
+
+    .escritaAtendimento {
+        color: black;
+        font-weight: 900;
+        font-size: 1.5rem;
+    }
+
+    .descricaoAtendimento {
+        color: black;
+        font-weight: 800;
+        font-size: 1rem;
+        white-space: normal;
+        word-wrap: break-word;
+        line-height: 1.5;
+    }
+
+    .faleConoscoAtendimento {
+        background-color: #FFA500;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1rem;
+        font-weight: 800;
+        color: black;
+        border-radius: 14px;
+        padding: 20px 14px;
+        width: 40%;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+    }
+
+    .imgAtendimento {
+        border-radius: 50px;
+        width: 30%;
+        height: 250px;
+        object-fit: cover;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    /*TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE */
+
+    .card {
+        width: 30vh;
+        height: 13.7rem;
+        padding: 1rem 0px 1.5rem 1rem;
+        margin-top: 0.9rem;
+    }
+
+    .card2 {
+        width: 30vh;
+        padding: 1rem 0px 1.5rem 1rem;
+        height: 13.7rem;
+    }
+
+    .cardSozinho {
+        width: 20rem;
+        height: 9rem;
+        padding: 20px 0px 20px 10px;
+        margin: 10px 10dvh 1.6rem 0px;
+    }
+
+    .card-cabeca h1 {
+        font-size: 1rem;
+        line-height: 1.2;
+        margin: 0;
+    }
+
+    .borda-icone {
+        width: 35px;
+        height: 35px;
+    }
+
+    .borda-icone img {
+        width: 35px;
+    }
+
+    .icon-container {
+        position: absolute;
+        top: -10px;
+        right: 0px;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-detalhes {
+        margin-top: 17px;
+        text-align: left;
+    }
+
+    .card-detalhes p {
+        color: #3e4095;
+        margin-bottom: 0px;
+        margin-top: 2px;
+        font-size: 1rem;
+    }
+
+    .opcoes {
+        display: flex;
+        align-items: center;
+        margin-bottom: -1rem;
+    }
+
+    .setaPreta {
+        width: 2rem;
+        height: auto;
+    }
+
+    .setaBranca {
+        position: absolute;
+        bottom: 0.7rem;
+        right: 0.7rem;
+        width: 1.4rem;
+    }
+
+    .faleConoscoCard {
+        font-size: 1rem;
+        padding: 1rem 0.5rem;
+        width: 11rem;
+        top: 10;
+        left: 3rem;
+    }
+
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------*/
+
+@media (max-width: 550px) {
+    .logoPromotora {
+        width: 20%;
+    }
+
+    .home,
+    .servicos,
+    .quemSomos,
+    .duvidas,
+    .faleConosco {
+        font-size: 0.6rem;
+    }
+
+    .imgBradesco,
+    .imgSantander {
+        width: 9rem;
+    }
+
+    .imgDaycoval {
+        width: 7rem;
+    }
+
+    .imgMaster,
+    .imgSafra,
+    .imgFacta {
+        width: 6rem;
+    }
+
+    .imgBMG,
+    .imgBrasil,
+    .imgCaixa,
+    .imgCapitalConsig,
+    .imgNeoCredito,
+    .imgSaninvest,
+    .imgPan,
+    .imgBRG,
+    .imgDigio,
+    .imgInsurba {
+        width: 5rem;
+    }
+
+    .imgBanrisul,
+    .imgItau {
+        width: 4rem;
+    }
+
+    .paginas-slide img {
+        margin: 20px;
+    }
+
+    .escritaAtendimento {
+        color: black;
+        font-weight: 900;
+        font-size: 1.1rem;
+    }
+
+    .descricaoAtendimento {
+        font-size: 0.7rem;
+        line-height: 1.0;
+        white-space: normal;
+        word-wrap: break-word;
+    }
+
+    .faleConoscoAtendimento {
+        background-color: #FFA500;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.7rem;
+        font-weight: 800;
+        color: black;
+        border-radius: 14px;
+        padding: 10px;
+        width: 40%;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+    }
+
+    .imgAtendimento {
+        border-radius: 50px;
+        width: 35%;
+        height: 180px;
+        object-fit: cover;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    /*TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE */
+
+    .card {
+        width: 20vh;
+        height: 8rem;
+        padding: 1rem 0px 2rem 1rem;
+        margin-top: 1rem;
+    }
+
+    .card2 {
+        width: 20vh;
+        height: 8.3rem;
+        padding: 1rem 0px 1.6rem 1rem;
+        margin-top: 1rem;
+    }
+
+    .cardSozinho {
+        width: 11rem;
+        height: 5rem;
+        padding: 1rem 0px 20px 10px;
+        margin: 10px 10dvh 1.3rem 0px;
+    }
+
+    .card-cabeca h1 {
+        font-size: 0.8rem;
+        line-height: 0.8;
+        margin: 0;
+    }
+
+    .borda-icone,
+    .icon-container {
+        display: none;
+    }
+
+
+    .card-detalhes {
+        margin-top: 0.4rem;
+    }
+
+    .card-detalhes p {
+        margin-bottom: 0px;
+        margin-top: 0.2rem;
+        font-size: 0.7rem;
+    }
+
+    .opcoes {
+        margin-bottom: 0rem;
+    }
+
+    .opcoes p {
+        font-size: 0.5rem;
+    }
+
+    .setaPreta {
+        width: 1rem;
+        height: auto;
+    }
+
+    .setaBranca {
+        position: absolute;
+        bottom: 0.7rem;
+        right: 0.7rem;
+        width: 1.1rem;
+    }
+
+    .faleConoscoCard {
+        font-size: 0.8rem;
+        padding: 1rem 0.5rem;
+        width: 8rem;
+        top: 10vh;
+        left: 3rem;
+    }
+
+}
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------------*/
+
+@media (max-width: 345px) {
+    .logoPromotora {
+        width: 18%;
+    }
+
+    .home,
+    .servicos,
+    .quemSomos,
+    .duvidas,
+    .faleConosco {
+        font-size: 0.5rem;
+        padding: 1px;
+    }
+
+    .imgBradesco,
+    .imgSantander {
+        width: 8rem;
+    }
+
+    .imgDaycoval {
+        width: 6rem;
+    }
+
+    .imgMaster,
+    .imgSafra,
+    .imgFacta {
+        width: 5rem;
+    }
+
+    .imgBMG,
+    .imgCaixa,
+    .imgCapitalConsig,
+    .imgNeoCredito,
+    .imgSaninvest,
+    .imgBrasil,
+    .imgPan,
+    .imgBRG,
+    .imgDigio,
+    .imgInsurba {
+        width: 4rem;
+    }
+
+    .imgBanrisul,
+    .imgItau {
+        width: 3rem;
+    }
+
+    .paginas-slide img {
+        margin: 20px;
+    }
+
+    .escritaAtendimento {
+        color: black;
+        font-weight: 900;
+        font-size: 0.7rem;
+    }
+
+    .descricaoAtendimento {
+        font-size: 0.4rem;
+        line-height: 1.0;
+        white-space: normal;
+        word-wrap: break-word;
+    }
+
+    .faleConoscoAtendimento {
+        background-color: #FFA500;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.4rem;
+        font-weight: 800;
+        color: black;
+        border-radius: 14px;
+        padding: 10px;
+        width: 40%;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+    }
+
+    .imgAtendimento {
+        border-radius: 30px;
+        width: 40%;
+        height: 140px;
+        object-fit: cover;
+
+    }
+}
