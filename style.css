@@ -960,14 +960,12 @@ p {
         padding: 1rem 0px 1rem 1rem;
         height: 9.6rem;
         flex-direction: column;
-        position: fixed;
     }
 
     .card2 {
         width: 8rem;
         height: 9.6rem;
         padding: 1rem 0px 1rem 1rem;
-        position: fixed;
 
     }
 
@@ -975,7 +973,6 @@ p {
         width: 186px;
         height: 5rem;
         padding: 1rem 0px 2rem 10px;
-        position: fixed;
     }
 
     .card-cabeca h1 {
