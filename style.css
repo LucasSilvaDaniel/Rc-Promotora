@@ -844,19 +844,21 @@ footer {
         margin-right: 10px;
     }
 
-    .container-card {
-        display: flex;
-        gap: 15px;
-        overflow-x: auto; /* Permite a rolagem horizontal dentro do contêiner */
-        scroll-snap-type: x mandatory; /* Para rolagem mais suave */
-        padding: 10px;
-    }
+/*-------------------------------------------------------------------------------*/
 
-    .card {
-        flex: 0 0 auto; /* Garante que os cards não encolham */
-        scroll-snap-align: center; /* Centraliza o card ao rolar */
-        min-width: 300px; /* Define largura mínima para o card em dispositivos móveis */
-    }
+.container-card {
+    display: flex; /* Muda para flexbox para rolagem horizontal */
+    gap: 15px;
+    overflow-x: auto; /* Habilita a rolagem horizontal */
+    scroll-snap-type: x mandatory; /* Suaviza a rolagem */
+    padding: 10px;
+}
+
+.card {
+    flex: 0 0 auto; /* Evita que os cards encolham */
+    scroll-snap-align: center; /* Alinha o card ao centro ao rolar */
+    min-width: 300px; /* Define largura mínima para cards em dispositivos móveis */
+}
 
 }
 
