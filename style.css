@@ -5,6 +5,11 @@ body {
     overflow-x: hidden;
 }
 
+body, html {
+    overflow-x: hidden;
+}
+
+
 .logoPromotora {
     width: 20%;
     height: auto;
@@ -847,24 +852,24 @@ footer {
 /*-------------------------------------------------------------------------------*/
 
 .alinhaCards {
-    overflow: hidden; /* Impede que o contêiner principal cause rolagem da tela */
-    width: 100vw; /* Garante que o contêiner ocupe apenas a largura da tela */
+    overflow: hidden;
+    width: 100vw; 
 }
 
 .container-card {
-    display: flex; /* Flex para rolagem horizontal dos cards */
+    display: flex; 
     gap: 15px;
-    overflow-x: auto; /* Habilita rolagem horizontal apenas no contêiner de cards */
-    scroll-snap-type: x mandatory; /* Suaviza a rolagem horizontal */
+    overflow-x: auto; 
+    scroll-snap-type: x mandatory; 
     padding: 10px;
-    width: 100%; /* Ocupa toda a largura do contêiner pai */
+    width: 100%; 
 }
 
 .card {
-    flex: 0 0 auto; /* Evita que os cards encolham */
-    scroll-snap-align: center; /* Alinha o card ao centro ao rolar */
-    min-width: 300px; /* Define largura mínima para os cards */
-    max-width: 85vw; /* Limita a largura dos cards para telas pequenas */
+    flex: 0 0 auto; 
+    scroll-snap-align: center; 
+    min-width: 300px; 
+    max-width: 85vw; 
 }
 
 }
