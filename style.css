@@ -846,18 +846,25 @@ footer {
 
 /*-------------------------------------------------------------------------------*/
 
+.alinhaCards {
+    overflow: hidden; /* Impede que o contêiner principal cause rolagem da tela */
+    width: 100vw; /* Garante que o contêiner ocupe apenas a largura da tela */
+}
+
 .container-card {
-    display: flex; /* Muda para flexbox para rolagem horizontal */
+    display: flex; /* Flex para rolagem horizontal dos cards */
     gap: 15px;
-    overflow-x: auto; /* Habilita a rolagem horizontal */
-    scroll-snap-type: x mandatory; /* Suaviza a rolagem */
+    overflow-x: auto; /* Habilita rolagem horizontal apenas no contêiner de cards */
+    scroll-snap-type: x mandatory; /* Suaviza a rolagem horizontal */
     padding: 10px;
+    width: 100%; /* Ocupa toda a largura do contêiner pai */
 }
 
 .card {
     flex: 0 0 auto; /* Evita que os cards encolham */
     scroll-snap-align: center; /* Alinha o card ao centro ao rolar */
-    min-width: 300px; /* Define largura mínima para cards em dispositivos móveis */
+    min-width: 300px; /* Define largura mínima para os cards */
+    max-width: 85vw; /* Limita a largura dos cards para telas pequenas */
 }
 
 }
