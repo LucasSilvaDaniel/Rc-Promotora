@@ -729,13 +729,8 @@ footer {
 
     .container-card {
         display: grid;
-        grid-auto-flow: column;
-        scroll-behavior: auto;
-        gap: 1.2rem;
-        overflow-y: auto;
-        overscroll-behavior-x: contain;
-        scroll-snap-type: x mandatory;
-        scrollbar-width: none;
+        grid-template-columns: repeat(2, 1fr);
+
     }
 
     .card {
@@ -743,7 +738,6 @@ footer {
         width: 300px;
         
     }
-
 
     .card h2 {
         font-size: 1rem;
@@ -849,6 +843,21 @@ footer {
         margin-left: 10px;
         margin-right: 10px;
     }
+
+    .container-card {
+        display: flex;
+        gap: 15px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory; /* Para rolagem mais suave */
+        padding: 10px;
+    }
+
+    .card {
+        flex: 0 0 auto; /* Garante que os cards não encolham */
+        scroll-snap-align: center; /* Centraliza o card ao rolar */
+        min-width: 300px; /* Define largura mínima para o card em dispositivos móveis */
+    }
+
 }
 
 /*------------------------------------------------------------------------------------------------------------------------------*/
