@@ -847,7 +847,7 @@ footer {
     .container-card {
         display: flex;
         gap: 15px;
-        overflow-x: auto;
+        overflow-x: auto; /* Permite a rolagem horizontal dentro do contêiner */
         scroll-snap-type: x mandatory; /* Para rolagem mais suave */
         padding: 10px;
     }
