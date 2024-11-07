@@ -870,6 +870,7 @@ footer {
     scroll-snap-align: center; 
     min-width: 300px; 
     max-width: 85vw; 
+    height: 130px;
 }
 
 }
