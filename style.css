@@ -1369,6 +1369,10 @@ header p {
         max-width: 80px;
         max-height: 40px;
     }
+
+    .CAIXA {
+        padding: 8px;
+    }
 }
 
 /*------------------------------------------------------------------------------------------------------------------------------*/
@@ -1645,6 +1649,10 @@ header p {
         max-width: 60px;
         max-height: 35px;
     }
+    
+    .CAIXA {
+        padding: 6px;
+    }
 }
 
 
@@ -1912,6 +1920,10 @@ header p {
     .CAIXA img {
         max-width: 50px;
         max-height: 25px;
+    }
+    
+    .CAIXA {
+        padding: 4px;
     }
 }
 
