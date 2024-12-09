@@ -1365,6 +1365,10 @@ header p {
         margin-bottom: 40px;
     }
 
+    .CAIXA img {
+        max-width: 80px;
+        max-height: 40px;
+    }
 }
 
 /*------------------------------------------------------------------------------------------------------------------------------*/
@@ -1636,6 +1640,11 @@ header p {
         font-family: Arial, Helvetica, sans-serif;
         margin-bottom: 40px;
     }
+
+    .CAIXA img {
+        max-width: 60px;
+        max-height: 35px;
+    }
 }
 
 
@@ -1861,9 +1870,9 @@ header p {
         height: 100%;
     }
 
-     /*logos logos logos logos logos logos logos logos logos logos logos logos logos logos logos logos logos logos logos logos logos logos logos logos logos */
+    /*logos logos logos logos logos logos logos logos logos logos logos logos logos logos logos logos logos logos logos logos logos logos logos logos logos */
 
-     header h1 {
+    header h1 {
         font-size: 1.5rem;
     }
 
@@ -1900,6 +1909,10 @@ header p {
         border-radius: 25px;
     }
 
+    .CAIXA img {
+        max-width: 50px;
+        max-height: 25px;
+    }
 }
 
 /*------------------------------------------------------------------------------------------------------------------------------*/
