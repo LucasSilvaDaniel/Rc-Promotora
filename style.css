@@ -500,6 +500,17 @@ input[type="text"] {
 
 .telefonePhone {
     display: flex;
+    color: white; /* Define a cor sempre como branca */
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+.telefonePhone a {
+    color: white;
+    text-decoration: none;
+}
+
+.telefonePhone a:hover {
+    color: white; /* Garante que a cor não mude ao passar o mouse */
 }
 
 .tagFooter {
@@ -544,7 +555,8 @@ header nav a:hover {
 }
 
 .alinhaTextoFoto {
-    position: relative; /* Define o contexto posicional */
+    position: relative;
+    /* Define o contexto posicional */
     display: flex;
 }
 
@@ -610,9 +622,9 @@ footer {
 }
 
 .testee {
-    position: absolute; /* Posiciona em relação ao pai .alinhaTextoFoto */
-    bottom: 20px; /* Ajuste conforme necessário */
-    right: 20px; /* Ajuste conforme necessário */
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
 }
 
 .testee img {
@@ -1108,7 +1120,7 @@ header p {
     .testee img {
         width: 250px;
     }
-    
+
 }
 
 /*------------------------------------------------------------------------------------------------------------------------------*/
@@ -1356,7 +1368,7 @@ header p {
     .testee img {
         width: 200px;
     }
-    
+
 }
 
 /*------------------------------------------------------------------------------------------------------------------------------*/
@@ -1620,7 +1632,7 @@ header p {
         max-width: 60px;
         max-height: 35px;
     }
-    
+
     .CAIXA {
         padding: 6px;
     }
@@ -1628,7 +1640,7 @@ header p {
     .testee img {
         width: 150px;
     }
-    
+
 }
 
 
@@ -1883,7 +1895,7 @@ header p {
         max-width: 50px;
         max-height: 25px;
     }
-    
+
     .CAIXA {
         padding: 4px;
     }
@@ -1891,7 +1903,7 @@ header p {
     .testee img {
         width: 100px;
     }
-    
+
 }
 
 /*------------------------------------------------------------------------------------------------------------------------------*/
