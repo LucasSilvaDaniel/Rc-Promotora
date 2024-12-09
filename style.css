@@ -492,7 +492,6 @@ input[type="text"] {
     color: white;
     font-weight: 700;
     font-size: 1rem;
-
 }
 
 .contact-info a {
@@ -501,7 +500,6 @@ input[type="text"] {
 
 .telefonePhone {
     display: flex;
-    color: white;
 }
 
 .tagFooter {
@@ -546,23 +544,15 @@ header nav a:hover {
 }
 
 .alinhaTextoFoto {
+    position: relative; /* Define o contexto posicional */
     display: flex;
 }
+
 
 .alinhaTextoFoto img {
     background-color: #292A32;
     padding: 10px;
     border-radius: 14px;
-}
-
-.testee {
-    position: absolute;
-    right: 100px;
-}
-
-.testee img {
-    width: 200px;
-    margin-top: 50%;
 }
 
 main {
@@ -617,6 +607,16 @@ footer {
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 40px;
+}
+
+.testee {
+    position: absolute; /* Posiciona em relação ao pai .alinhaTextoFoto */
+    bottom: 20px; /* Ajuste conforme necessário */
+    right: 20px; /* Ajuste conforme necessário */
+}
+
+.testee img {
+    width: 300px;
 }
 
 /*logos logos logos logos logos logos logos logos logos logos logos logos logos logos logos logos logos logos logos logos logos logos logos logos logos */
@@ -989,24 +989,10 @@ header p {
         height: auto;
     }
 
-    .alinhaTextoFoto {
-        display: flex;
-    }
-
     .alinhaTextoFoto img {
         background-color: #292A32;
         padding: 10px;
         border-radius: 14px;
-    }
-
-    .testee {
-        position: relative;
-        right: 33vh;
-
-    }
-
-    .testee img {
-        width: 200px;
     }
 
     main {
@@ -1118,6 +1104,11 @@ header p {
         cursor: pointer;
         border-radius: 25px;
     }
+
+    .testee img {
+        width: 250px;
+    }
+    
 }
 
 /*------------------------------------------------------------------------------------------------------------------------------*/
@@ -1285,23 +1276,10 @@ header p {
         height: auto;
     }
 
-    .alinhaTextoFoto {
-        display: flex;
-    }
-
     .alinhaTextoFoto img {
         background-color: #292A32;
         padding: 10px;
         border-radius: 14px;
-    }
-
-    .testee {
-        position: relative;
-        right: 55vh;
-    }
-
-    .testee img {
-        width: 200px;
     }
 
     .contact-info {
@@ -1374,6 +1352,11 @@ header p {
     .CAIXA {
         padding: 8px;
     }
+
+    .testee img {
+        width: 200px;
+    }
+    
 }
 
 /*------------------------------------------------------------------------------------------------------------------------------*/
@@ -1561,23 +1544,10 @@ header p {
         height: auto;
     }
 
-    .alinhaTextoFoto {
-        display: flex;
-    }
-
     .alinhaTextoFoto img {
         background-color: #292A32;
         padding: 10px;
         border-radius: 14px;
-    }
-
-    .testee {
-        position: relative;
-        right: 55vh;
-    }
-
-    .testee img {
-        width: 150px;
     }
 
     .contact-info {
@@ -1654,6 +1624,11 @@ header p {
     .CAIXA {
         padding: 6px;
     }
+
+    .testee img {
+        width: 150px;
+    }
+    
 }
 
 
@@ -1799,24 +1774,10 @@ header p {
         height: auto;
     }
 
-    .alinhaTextoFoto {
-        display: flex;
-        height: auto;
-    }
-
     .alinhaTextoFoto img {
         background-color: #292A32;
         padding: 10px;
         border-radius: 14px;
-    }
-
-    .testee {
-        position: relative;
-        right: 75vh;
-    }
-
-    .testee img {
-        width: 60px;
     }
 
     .contact-info {
@@ -1926,6 +1887,11 @@ header p {
     .CAIXA {
         padding: 4px;
     }
+
+    .testee img {
+        width: 100px;
+    }
+    
 }
 
 /*------------------------------------------------------------------------------------------------------------------------------*/
