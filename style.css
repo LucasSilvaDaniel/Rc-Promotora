@@ -501,6 +501,7 @@ input[type="text"] {
 
 .telefonePhone {
     display: flex;
+    color: white;
 }
 
 .tagFooter {
