@@ -580,7 +580,7 @@ header nav a:hover {
 /* Alinha a imagem da logo no canto inferior direito */
 .testee {
     position: absolute;
-    bottom: 20px;
+    bottom: 0px;
     right: 20px;
 }
 
