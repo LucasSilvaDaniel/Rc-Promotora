@@ -11,15 +11,15 @@
 <body>
     <div class="container">
         <img class="logoPromotora" src="Imagens/LogosPromotora/logoPromotoraLaranjaBranco.png" alt="promotoraLogo">
-        <p class="home" href="">Home</p>
-        <p class="servicos" href="">Serviços</p>
-        <p class="quemSomos" href="">Quem Somos</p>
-        <p class="duvidas" href="">Dúvidas</p>
-        <a class="faleConosco" href="">Fale Conosco</a>
+        <a class="home" href="">Home</a>
+        <a class="servicos" href="#servicos">Serviços</a>
+        <a class="quemSomos" href="#quemSomos">Quem Somos</a>
+        <a class="duvidas" href="#duvidas">Dúvidas</a>
+        <a class="faleConosco" href="#faleConosco">Fale Conosco</a>
     </div>
     <!----------------------------------------------------- Fim da Div container ---------------------------------------------------------------------------------------->
 
-    <div class="container-slide">
+    <div id="quemSomos" class="container-slide">
         <div class="paginas-slide">
             <img class="imgBMG" src="Imagens/LogosBancos/bancoBMGLogo.png" alt="Banco BMG">
             <img class="imgBradesco" src="Imagens/LogosBancos/bancoBradescoLogo.png" alt="Banco Bradesco">
@@ -73,13 +73,13 @@
                 objetivos.
             </p>
 
-            <a class="faleConoscoAtendimento" href="faleConosco.html">Fale Conosco</a>
+            <a class="faleConoscoAtendimento" href="#faleConosco">Fale Conosco</a>
         </div>
         <img class="imgAtendimento" src="Imagens/ImgHome.jpg" alt="Imagem Home">
     </div>
     <!--------------------------------------------------------------Fim da Div Atendimento----------------------------------------------------------------------------------->
 
-    <div class="alinhaCards">
+    <div id="servicos" class="alinhaCards">
         <div class="container-card">
 
             <div class="card">
@@ -198,7 +198,7 @@
     </div>
     <!--------------------------------------------------------------Fim Conatiner Serviços--------------------------------------------------------------------->
 
-    <div class="duvidasContainer">
+    <div class="duvidasContainer" id="duvidas">
         <p class="duvidasTitulo">Dúvidas frequentes</p>
         <img class="logoPromotoraDuvidas" src="Imagens/LogosPromotora/logoPromotoraLaranjaBranco.png" alt="">
         <div class="containerCardsDuvidas">
@@ -315,10 +315,10 @@
             <header>
                 <nav>
                     <div class="divTagsFooter">
-                        <a class="tagFooter" href="#home">Home</a>
-                        <a class="tagFooter" href="#services">Serviços</a>
-                        <a class="tagFooter" href="#about">Quem Somos</a>
-                        <a class="tagFooter" href="#faq">Dúvidas</a>
+                        <a class="tagFooter" href="#">Home</a>
+                        <a class="tagFooter" href="#servicos">Serviços</a>
+                        <a class="tagFooter" href="#quemSomos">Quem Somos</a>
+                        <a class="tagFooter" href="#duvidas">Dúvidas</a>
                     </div>
                     <div class="icons">
                         <a href="https://wa.me/48999585803"><img src="Imagens/whatsapp.png" alt="WhatsApp"></a>
@@ -339,7 +339,8 @@
                         <p class="telefonePhone"><span class="phone-icon">📞</span>(48) 99958-5803</p>
 
                         <div class="posicionaItensFooter">
-                            <a class="linkInstagramFooter" href="https://www.instagram.com/rc_promotoracred/"
+                            <a id="faleConosco" class="linkInstagramFooter"
+                                href="https://www.instagram.com/rc_promotoracred/"
                                 target="_blank">https://www.instagram.com/rc_promotoracred/</a>
                             <a class="falaConoscoFooter" onclick="contactUs()">Fale Conosco</a>
                         </div>
@@ -355,12 +356,6 @@
             <p>© 2024 Todos os direitos reservados. RC Promotora de Crédito</p>
         </footer>
     </div>
-    <script>
-        window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
-      </script>
-      <script defer src="/_vercel/speed-insights/script.js"></script>
-
-    <script src="script.js"></script>
 </body>
 
 </html>
