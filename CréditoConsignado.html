@@ -1,11 +1,470 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crédito Consignado</title>
+    <style>
+        body {
+            margin: 0;
+            min-width: 280px;
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body,
+        html {
+            overflow-x: hidden;
+        }
+
+        .logoPromotora {
+            width: 20%;
+            height: auto;
+            margin: 2%;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            background-color: #332C89;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .home {
+            padding: 10px;
+            font-weight: 700;
+            color: white;
+            font-size: 22px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+        }
+
+        .servicos {
+            padding: 10px;
+            font-weight: 700;
+            color: white;
+            font-size: 22px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+        }
+
+        .quemSomos {
+            padding: 10px;
+            font-weight: 700;
+            color: white;
+            font-size: 22px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+        }
+
+        .duvidas {
+            padding: 10px;
+            font-weight: 700;
+            color: white;
+            font-size: 22px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+        }
+
+        .faleConosco {
+            background-color: #FFA500;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 700;
+            color: black;
+            border-radius: 14px;
+            padding: 14px;
+            text-decoration: none;
+        }
+
+        .divPontosPositivos {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f4f4f4;
+            padding-top: 40px;
+        }
+
+        .pontosPositivos {
+            font-size: 2.5rem;
+            color: #332C89;
+            margin: 0;
+        }
+
+        .benefits {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 40px;
+            margin: 0 auto;
+            background-color: #f4f4f4;
+            gap: 10px;
+        }
+
+        .benefit-card {
+            background-color: white;
+            width: 30%;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .benefit-card h3 {
+            color: #332C89;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+
+        .benefit-card p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .testimonials {
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .testimonials h2 {
+            font-size: 2.5rem;
+            color: #332C89;
+            margin-bottom: 30px;
+        }
+
+        .testimonial-cards {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .testimonial-card {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .testimonial-card p {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .testimonial-card .author {
+            font-weight: 600;
+            color: #332C89;
+        }
+
+        .contact-form {
+            background-color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .contact-form h2 {
+            font-size: 2.5rem;
+            color: #332C89;
+            margin-bottom: 30px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .contact-form button {
+            background-color: #FFA500;
+            color: black;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 20px;
+        }
+
+        .contact-form button:hover {
+            background-color: #FF8C00;
+        }
+
+        footer {
+            background-color: #332C89;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+        footer a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        footer a:hover {
+            color: #FFA500;
+        }
+
+        input[type="text"] {
+            width: 50%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            font-size: 16px;
+            outline: none;
+        }
+
+        input[type="number"] {
+            width: 50%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            font-size: 16px;
+            outline: none;
+        }
+
+        select {
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            font-size: 16px;
+            outline: none;
+        }
+
+        #convenio {
+            width: 52%;
+            border: 1px solid lightgray;
+        }
+
+        .convenio-input {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 5px;
+        }
+
+        @media (max-width: 923px) {}
+
+        .logoPromotora {
+            width: 30%;
+        }
+
+        .home,
+        .servicos,
+        .quemSomos,
+        .duvidas,
+        .faleConosco {
+            font-size: 16px;
+            padding: 2px;
+        }
+
+        @media (max-width: 900px) {
+            .logoPromotora {
+            width: 30%;
+        }
+
+        .home,
+        .servicos,
+        .quemSomos,
+        .duvidas,
+        .faleConosco {
+            font-size: 14px;
+            padding: 2px;
+        }
+        }        
+
+        @media (max-width: 790px) {
+
+            .logoPromotora {
+                width: 20%;
+            }
+
+            .home,
+            .servicos,
+            .quemSomos,
+            .duvidas,
+            .faleConosco {
+                font-size: 12px;
+            }
+
+            .benefits {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .benefit-card {
+                width: 80%;
+                margin-bottom: 30px;
+            }
+
+            .testimonial-cards {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .testimonial-card {
+                width: 80%;
+                margin-bottom: 30px;
+            }
+        }
+
+        @media (max-width: 685px) {
+
+            .home,
+            .servicos,
+            .quemSomos,
+            .duvidas,
+            .faleConosco {
+                font-size: 10px;
+            }
+        }
+
+        @media (max-width: 500px) {
+
+            .home,
+            .servicos,
+            .quemSomos,
+            .duvidas,
+            .faleConosco {
+                font-size: 0.6rem;
+            }
+        }
+
+        @media (max-width: 477px) {
+
+            .home,
+            .servicos,
+            .quemSomos,
+            .duvidas,
+            .faleConosco {
+                font-size: 0.4rem;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Cartão Consignado</h1>
+
+    <div class="container">
+        <img class="logoPromotora" src="Imagens/LogosPromotora/logoPromotoraLaranjaBranco.png" alt="promotoraLogo">
+        <a class="home" href="index.html">Home</a>
+        <a class="servicos" href="CartãoConsignado.html">Cartão Consignado</a>
+        <a class="quemSomos" href="CreditoCartaoCredito.html">Cartão de Crédito</a>
+        <a class="duvidas" href="antecipacaoFgts.html">Saque Aniversário</a>
+        <a class="faleConosco" href="#faleConosco">Fale Conosco</a>
+    </div>
+
+    <div class="divPontosPositivos">
+        <h2 class="pontosPositivos">Pontos Positivos</h2>
+    </div>
+    <section class="benefits" id="benefits">
+        <div class="benefit-card">
+            <h3>Desconto em Folha</h3>
+            <p>Pagamentos automáticos descontados diretamente do salário ou benefício.</p>
+        </div>
+        <div class="benefit-card">
+            <h3>Prazo Estendido</h3>
+            <p>Possibilidade de parcelar em até 72 meses, dependendo do perfil.</p>
+        </div>
+        <div class="benefit-card">
+            <h3>Acesso Rápido ao Crédito</h3>
+            <p>Liberação do valor contratado em poucas horas.</p>
+        </div>
+    </section>
+
+
+    <section class="testimonials" id="testimonials">
+        <h2>O que nossos clientes dizem</h2>
+        <div class="testimonial-cards">
+            <div class="testimonial-card">
+                <p>"Com o crédito consignado, consegui realizar meu sonho de abrir meu próprio negócio."</p>
+                <div class="author">Ana Santos</div>
+            </div>
+            <div class="testimonial-card">
+                <p>"O processo foi rápido e o suporte ao cliente é impecável. Muito satisfeito!"</p>
+                <div class="author">Rafael Almeida</div>
+            </div>
+            <div class="testimonial-card">
+                <p>"As condições oferecidas foram as melhores do mercado. Fiquei impressionada com a facilidade."</p>
+                <div class="author">Beatriz Martins</div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="contact-form" id="contact">
+        <h2 id="faleConosco">Entre em Contato</h2>
+        <form id="contactForm" action="">
+            <input type="text" id="name" placeholder="Nome" required>
+            <input type="number" id="cpf" placeholder="CPF" required>
+            <div class="convenio-input">
+                <select id="convenio">
+                    <option value="" disabled selected>Escolha o convênio</option>
+                    <option value="Pessoa Física">TJ – SC</option>
+                    <option value="Pessoa Física">TRT – SC</option>
+                    <option value="Pessoa Física">PREF. DE FLORIANÓPOLIS - SC</option>
+                    <option value="Pessoa Física">MARINHA</option>
+                    <option value="Pessoa Física">INSS</option>
+                    <option value="Pessoa Física">GOVERNO SC</option>
+                    <option value="Pessoa Física">GOVERNO PR</option>
+                    <option value="Pessoa Física">FGTS</option>
+                    <option value="Pessoa Física">FEDERAL</option>
+                    <option value="Pessoa Física">AERONÁUTICA</option>
+                    <option value="Pessoa Física">COMCAP</option>
+                    <option value="Pessoa Física">CRÉDITO PESSOAL - DÉBITO EM CONTA</option>
+                    <option value="Pessoa Física">PREF. DE SÃO JOSÉ - SC</option>
+                </select>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 RC Promotora de Crédito. Todos os direitos reservados.</p>
+        <div>
+            <a href="https://wa.me/48999585803">WhatsApp</a>
+            <a href="https://www.instagram.com/rc_promotoracred/">Instagram</a>
+            <a href="https://www.facebook.com/share/1B2p2JMiWa/?mibextid=LQQJ4d">Facebook</a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
+
 </html>
