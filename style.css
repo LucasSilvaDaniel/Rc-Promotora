@@ -1936,15 +1936,19 @@ header p {
         cursor: pointer;
         border-radius: 25px;
     }
-
     .CAIXA img {
-        width: 150px;
-        height: auto;
+        width: 150px; /* Ajuste o tamanho desejado */
+        height: 100px; /* Define uma altura consistente */
+        object-fit: contain; /* Garante que a imagem se ajuste sem distorcer */
     }
-
+    
     .CAIXA {
         padding: 4px;
+        display: flex;
+        justify-content: center; /* Centraliza as imagens */
+        align-items: center; /* Centraliza verticalmente */
     }
+    
 
     .testee img {
         width: 100px;
