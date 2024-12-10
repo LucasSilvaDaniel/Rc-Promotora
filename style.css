@@ -1936,17 +1936,23 @@ header p {
         cursor: pointer;
         border-radius: 25px;
     }
-    .CAIXA img {
-        width: 150px; /* Ajuste o tamanho desejado */
-        height: 100px; /* Define uma altura consistente */
-        object-fit: contain; /* Garante que a imagem se ajuste sem distorcer */
+    .CAIXA {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff; /* Fundo branco para contraste */
+        border-radius: 8px; /* Bordas arredondadas */
+        padding: 10px; /* Espaço interno ao redor das imagens */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+        width: 160px; /* Tamanho fixo do contêiner */
+        height: 110px; /* Tamanho fixo do contêiner */
     }
     
-    .CAIXA {
-        padding: 4px;
-        display: flex;
-        justify-content: center; /* Centraliza as imagens */
-        align-items: center; /* Centraliza verticalmente */
+    .CAIXA img {
+        max-width: 100%; /* Ajusta a largura sem ultrapassar o contêiner */
+        max-height: 100%; /* Ajusta a altura sem ultrapassar o contêiner */
+        object-fit: contain; /* Garante que a imagem se ajuste completamente */
+        display: block; /* Remove espaços extras */
     }
     
 
