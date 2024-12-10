@@ -1955,6 +1955,9 @@ header p {
         display: block; /* Remove espaços extras */
     }
     
+    .CAIXA-CONTAINER {
+        grid-template-columns: repeat(3, 1fr);
+    }
 
     .testee img {
         width: 100px;
