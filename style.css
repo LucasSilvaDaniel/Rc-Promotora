@@ -328,6 +328,16 @@ input[type="text"] {
     outline: none;
 }
 
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+}
+
 #convenio {
     width: 100%;
     border: 1px solid lightgray;
@@ -531,7 +541,7 @@ input[type="text"] {
 }
 
 .divFooter {
-    background-color: #3d2723;
+    background-color: #1a2a71;
 }
 
 .espacoFooter {
@@ -569,13 +579,11 @@ header nav a:hover {
     height: auto;
 }
 
-/* Certifique-se de que as tags de navegação também estejam distribuídas igualmente */
 .menu-items {
     display: flex;
     justify-content: space-between;
     width: 100%;
     gap: 20px;
-    /* Espaço entre as tags */
 }
 
 .menu-items a {
@@ -656,8 +664,7 @@ footer {
 }
 
 .linkInstagramFooter {
-    color: rgb(176, 173, 230);
-    font-weight: 700;
+color: white;    font-weight: 700;
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 40px;
@@ -1408,21 +1415,29 @@ header p {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #fff; 
-        border-radius: 8px; 
-        padding: 10px; /* Espaço interno ao redor das imagens */
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
-        width: 85px; /* Tamanho fixo do contêiner */
-        height: 45px; /* Tamanho fixo do contêiner */
+        background-color: #fff;
+        border-radius: 8px;
+        padding: 10px;
+        /* Espaço interno ao redor das imagens */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        /* Sombra para destaque */
+        width: 85px;
+        /* Tamanho fixo do contêiner */
+        height: 45px;
+        /* Tamanho fixo do contêiner */
     }
-    
+
     .CAIXA img {
-        max-width: 100%; /* Ajusta a largura sem ultrapassar o contêiner */
-        max-height: 100%; /* Ajusta a altura sem ultrapassar o contêiner */
-        object-fit: contain; /* Garante que a imagem se ajuste completamente */
-        display: block; /* Remove espaços extras */
+        max-width: 100%;
+        /* Ajusta a largura sem ultrapassar o contêiner */
+        max-height: 100%;
+        /* Ajusta a altura sem ultrapassar o contêiner */
+        object-fit: contain;
+        /* Garante que a imagem se ajuste completamente */
+        display: block;
+        /* Remove espaços extras */
     }
-    
+
     .CAIXA-CONTAINER {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -1693,21 +1708,29 @@ header p {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #fff; 
-        border-radius: 8px; 
-        padding: 10px; /* Espaço interno ao redor das imagens */
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
-        width: 85px; /* Tamanho fixo do contêiner */
-        height: 45px; /* Tamanho fixo do contêiner */
+        background-color: #fff;
+        border-radius: 8px;
+        padding: 10px;
+        /* Espaço interno ao redor das imagens */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        /* Sombra para destaque */
+        width: 85px;
+        /* Tamanho fixo do contêiner */
+        height: 45px;
+        /* Tamanho fixo do contêiner */
     }
-    
+
     .CAIXA img {
-        max-width: 100%; /* Ajusta a largura sem ultrapassar o contêiner */
-        max-height: 100%; /* Ajusta a altura sem ultrapassar o contêiner */
-        object-fit: contain; /* Garante que a imagem se ajuste completamente */
-        display: block; /* Remove espaços extras */
+        max-width: 100%;
+        /* Ajusta a largura sem ultrapassar o contêiner */
+        max-height: 100%;
+        /* Ajusta a altura sem ultrapassar o contêiner */
+        object-fit: contain;
+        /* Garante que a imagem se ajuste completamente */
+        display: block;
+        /* Remove espaços extras */
     }
-    
+
     .CAIXA-CONTAINER {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -1850,12 +1873,6 @@ header p {
         text-decoration: underline;
     }
 
-    .icons {
-        display: flex;
-        gap: 0px;
-        margin-left: 50px;
-    }
-
     .icons img {
         width: 20px;
         height: auto;
@@ -1926,7 +1943,7 @@ header p {
         height: 100%;
     }
 
-    
+
 
     /*logos logos logos logos logos logos logos logos logos logos logos logos logos logos logos logos logos logos logos logos logos logos logos logos logos */
 
@@ -1966,25 +1983,34 @@ header p {
         cursor: pointer;
         border-radius: 25px;
     }
+
     .CAIXA {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #fff; 
-        border-radius: 8px; 
-        padding: 10px; /* Espaço interno ao redor das imagens */
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
-        width: 85px; /* Tamanho fixo do contêiner */
-        height: 45px; /* Tamanho fixo do contêiner */
+        background-color: #fff;
+        border-radius: 8px;
+        padding: 10px;
+        /* Espaço interno ao redor das imagens */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        /* Sombra para destaque */
+        width: 85px;
+        /* Tamanho fixo do contêiner */
+        height: 45px;
+        /* Tamanho fixo do contêiner */
     }
-    
+
     .CAIXA img {
-        max-width: 100%; /* Ajusta a largura sem ultrapassar o contêiner */
-        max-height: 100%; /* Ajusta a altura sem ultrapassar o contêiner */
-        object-fit: contain; /* Garante que a imagem se ajuste completamente */
-        display: block; /* Remove espaços extras */
+        max-width: 100%;
+        /* Ajusta a largura sem ultrapassar o contêiner */
+        max-height: 100%;
+        /* Ajusta a altura sem ultrapassar o contêiner */
+        object-fit: contain;
+        /* Garante que a imagem se ajuste completamente */
+        display: block;
+        /* Remove espaços extras */
     }
-    
+
     .CAIXA-CONTAINER {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -2081,3 +2107,4 @@ header p {
         object-fit: cover;
     }
 }
+
