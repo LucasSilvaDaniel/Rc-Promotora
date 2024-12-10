@@ -1404,13 +1404,27 @@ header p {
         margin-bottom: 40px;
     }
 
-    .CAIXA img {
-        max-width: 80px;
-        max-height: 40px;
-    }
-
     .CAIXA {
-        padding: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff; 
+        border-radius: 8px; 
+        padding: 10px; /* Espaço interno ao redor das imagens */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+        width: 85px; /* Tamanho fixo do contêiner */
+        height: 45px; /* Tamanho fixo do contêiner */
+    }
+    
+    .CAIXA img {
+        max-width: 100%; /* Ajusta a largura sem ultrapassar o contêiner */
+        max-height: 100%; /* Ajusta a altura sem ultrapassar o contêiner */
+        object-fit: contain; /* Garante que a imagem se ajuste completamente */
+        display: block; /* Remove espaços extras */
+    }
+    
+    .CAIXA-CONTAINER {
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .testee img {
@@ -1675,13 +1689,27 @@ header p {
         margin-bottom: 40px;
     }
 
-    .CAIXA img {
-        max-width: 60px;
-        max-height: 35px;
-    }
-
     .CAIXA {
-        padding: 6px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff; 
+        border-radius: 8px; 
+        padding: 10px; /* Espaço interno ao redor das imagens */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+        width: 85px; /* Tamanho fixo do contêiner */
+        height: 45px; /* Tamanho fixo do contêiner */
+    }
+    
+    .CAIXA img {
+        max-width: 100%; /* Ajusta a largura sem ultrapassar o contêiner */
+        max-height: 100%; /* Ajusta a altura sem ultrapassar o contêiner */
+        object-fit: contain; /* Garante que a imagem se ajuste completamente */
+        display: block; /* Remove espaços extras */
+    }
+    
+    .CAIXA-CONTAINER {
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .testee img {
@@ -1798,7 +1826,7 @@ header p {
     /*footer footer footer footer footer footer footer footer footer footer footer footer*/
 
     .tagFooter {
-        font-size: 10px;
+        font-size: 11px;
         font-family: Arial, Helvetica, sans-serif;
     }
 
@@ -1848,7 +1876,7 @@ header p {
     .contact-info p {
         color: white;
         font-weight: 700;
-        font-size: 0.5em;
+        font-size: 9px;
         display: flex;
     }
 
@@ -1897,6 +1925,8 @@ header p {
         padding-top: 0px;
         height: 100%;
     }
+
+    
 
     /*logos logos logos logos logos logos logos logos logos logos logos logos logos logos logos logos logos logos logos logos logos logos logos logos logos */
 
