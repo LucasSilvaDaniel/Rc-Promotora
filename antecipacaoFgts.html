@@ -259,6 +259,16 @@
             outline: none;
         }
 
+        input[type="tel"] {
+            width: 50%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            font-size: 16px;
+            outline: none;
+        }
+
         select {
             padding: 10px;
             margin-top: 5px;
@@ -278,6 +288,31 @@
             align-items: center;
             justify-content: center;
             margin-top: 5px;
+        }
+
+        .creditoJa {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-color: #f4f4f4;
+            padding-top: 40px;
+        }
+
+        .creditoJa p {
+            font-size: 16px;
+            margin: 10px;
+        }
+
+        .saqueVoceMesmo {
+            background-color: orange;
+            color: black;
+            padding: 10px;
+            font-size: 22px;
+            border-radius: 14px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 15px;
         }
 
         @media (max-width: 923px) {}
@@ -375,6 +410,15 @@
         <a class="duvidas" href="CreditoCartaoCredito.html">Cartão de Crédito</a>
     </div>
 
+    <div class="creditoJa">
+        <h2 class="pontosPositivos">Antecipe já o seu FGTS!</h2>
+        <p>Garanta condições especiais e aproveite vantagens exclusivas.</p>
+        <p>💰 Rápido, fácil e seguro!</p>
+
+        <a class="saqueVoceMesmo" href="https://link.icred.app/eQ9zfK7">Saque você mesmo!</a>
+    </div>
+
+
     <div class="divPontosPositivos">
         <h2 class="pontosPositivos">Antecipação do FGTS</h2>
     </div>
@@ -392,48 +436,51 @@
             <p>Processo simplificado e aprovado rapidamente, sem complicação para você.</p>
         </div>
     </section>
-    
+
     <section class="testimonials" id="testimonials">
         <h2>O que nossos clientes dizem sobre a Antecipação do FGTS</h2>
         <div class="testimonial-cards">
             <div class="testimonial-card">
-                <p>"Antecipei meu saque aniversário e resolvi uma emergência financeira rapidamente. Amei a facilidade!"</p>
+                <p>"Antecipei meu saque aniversário e resolvi uma emergência financeira rapidamente. Amei a facilidade!"
+                </p>
                 <div class="author">Carlos Oliveira</div>
             </div>
             <div class="testimonial-card">
-                <p>"Aproveitei as boas condições e consegui pagar minhas dívidas com a antecipação do FGTS. Foi a melhor decisão!"</p>
+                <p>"Aproveitei as boas condições e consegui pagar minhas dívidas com a antecipação do FGTS. Foi a melhor
+                    decisão!"</p>
                 <div class="author">Mariana Costa</div>
             </div>
             <div class="testimonial-card">
-                <p>"Foi muito rápido e sem complicação! A antecipação do FGTS me ajudou a dar aquele empurrão no meu orçamento."</p>
+                <p>"Foi muito rápido e sem complicação! A antecipação do FGTS me ajudou a dar aquele empurrão no meu
+                    orçamento."</p>
                 <div class="author">João Silva</div>
             </div>
         </div>
     </section>
-    
-
 
     <section class="contact-form" id="contact">
         <h2 id="faleConosco">Entre em Contato</h2>
         <form id="contactForm" action="">
             <input type="text" id="name" placeholder="Nome" required>
-            <input type="number" id="cpf" placeholder="CPF" required>
+            <input type="number" id="cpf" placeholder="Cpf" required>
+            <input type="tel" id="telefone" placeholder="(DDD) 00000-0000" required>
+
             <div class="convenio-input">
                 <select id="convenio">
                     <option value="" disabled selected>Escolha o convênio</option>
-                    <option value="Pessoa Física">TJ – SC</option>
-                    <option value="Pessoa Física">TRT – SC</option>
-                    <option value="Pessoa Física">PREF. DE FLORIANÓPOLIS - SC</option>
-                    <option value="Pessoa Física">MARINHA</option>
-                    <option value="Pessoa Física">INSS</option>
-                    <option value="Pessoa Física">GOVERNO SC</option>
-                    <option value="Pessoa Física">GOVERNO PR</option>
-                    <option value="Pessoa Física">FGTS</option>
-                    <option value="Pessoa Física">FEDERAL</option>
-                    <option value="Pessoa Física">AERONÁUTICA</option>
-                    <option value="Pessoa Física">COMCAP</option>
-                    <option value="Pessoa Física">CRÉDITO PESSOAL - DÉBITO EM CONTA</option>
-                    <option value="Pessoa Física">PREF. DE SÃO JOSÉ - SC</option>
+                    <option value="TJ – SC">TJ – SC</option>
+                    <option value="TRT – SC">TRT – SC</option>
+                    <option value="PREF. DE FLORIANÓPOLIS - SC">PREF. DE FLORIANÓPOLIS - SC</option>
+                    <option value="MARINHA">MARINHA</option>
+                    <option value="INSS">INSS</option>
+                    <option value="GOVERNO SC Física">GOVERNO SC</option>
+                    <option value="GOVERNO PR">GOVERNO PR</option>
+                    <option value="FGTS">FGTS</option>
+                    <option value="FEDERAL">FEDERAL</option>
+                    <option value="AERONÁUTICA">AERONÁUTICA</option>
+                    <option value="COMCAP">COMCAP</option>
+                    <option value="CRÉDITO PESSOAL - DÉBITO EM CONTA">CRÉDITO PESSOAL - DÉBITO EM CONTA</option>
+                    <option value="PREF. DE SÃO JOSÉ - SC">PREF. DE SÃO JOSÉ - SC</option>
                 </select>
             </div>
             <button type="submit">Enviar</button>

@@ -39,13 +39,47 @@ function mostraEscondeResposta(id) {
     }
 }
 
+
 document.getElementById('contactForm').addEventListener('submit', function (event) {
     event.preventDefault();
 
-    const name = document.getElementById('name').value;
-    const cpf = document.getElementById('cpf').value;
+    const name = document.getElementById('name').value.trim();
+    const cpf = document.getElementById('cpf').value.trim();
+    const telefone = document.getElementById('telefone').value.trim();
     const convenio = document.getElementById('convenio').value;
 
-    const whatsappURL = `https://wa.me/48999585803?text=${encodeURIComponent(`Olá Raphael, eu sou o(a) ${name}, meu CPF é ${cpf} e venho te contatar a respeito de ${convenio}`)}`;
+    if (!name || !cpf || !telefone || !convenio) {
+        alert("Por favor, preencha todos os campos.");
+        return;
+    }
+
+    const whatsappURL = `https://wa.me/48999585803?text=${encodeURIComponent(
+        `Olá Raphael, eu sou o(a) ${name} do telefone ${telefone}, meu CPF é ${cpf} e venho te contatar a respeito de ${convenio}`
+    )}`;
     window.location.href = whatsappURL;
+});
+
+document.getElementById('cpf').addEventListener('input', function (event) {
+    let input = event.target.value.replace(/\D/g, "");
+    if (input.length > 11) input = input.substring(0, 11);
+    event.target.value = input;
+});
+
+document.getElementById('telefone').addEventListener('input', function (event) {
+    let input = event.target.value.replace(/\D/g, ""); 
+    if (input.length > 11) input = input.substring(0, 11); 
+
+    let formattedValue = '';
+
+    if (input.length > 2) {
+        formattedValue += `(${input.substring(0, 2)}) `; 
+        input = input.substring(2);
+    }
+    if (input.length > 5) {
+        formattedValue += `${input.substring(0, 5)}-`;
+        input = input.substring(5);
+    }
+    formattedValue += input; 
+
+    event.target.value = formattedValue;
 });
