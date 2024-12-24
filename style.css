@@ -1755,6 +1755,10 @@ header p {
         width: 150px;
     }
 
+    .margin {
+        font-size: 10px;
+    }
+
 }
 
 
@@ -1762,6 +1766,11 @@ header p {
 
 
 @media (max-width: 600px) {
+
+    .margin {
+        font-size: 8px;
+    }
+
     .logoPromotora {
         width: 20%;
     }
